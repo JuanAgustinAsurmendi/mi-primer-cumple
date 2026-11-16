@@ -211,11 +211,11 @@ function getTargetBirthdayDate() {
     const now = new Date();
     let year = now.getFullYear();
     // Mes 10 en JavaScript es Noviembre (0-indexado)
-    let target = new Date(year, 10, 28, 12, 0, 0);
+    let target = new Date(year, 10, 28, 13, 0, 0);
 
     // Si ya pasó por más de 24 horas el 28 de noviembre de este año, apunta al próximo
     if (now.getTime() - target.getTime() > 86400000) {
-        target = new Date(year + 1, 10, 28, 12, 0, 0);
+        target = new Date(year + 1, 10, 28, 13, 0, 0);
     }
     return target;
 }
